@@ -15,6 +15,6 @@
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 
-@property (nonatomic, strong) NSArray *allRecepyInfos;
+@property (nonatomic, strong) NSMutableArray *allRecepyInfos;
 
 @end

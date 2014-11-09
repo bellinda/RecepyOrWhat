@@ -58,8 +58,8 @@
 		0638A6751A0F0C8D003A2E28 /* RecepyBasicInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecepyBasicInfo.m; sourceTree = "<group>"; };
 		0638A6771A0F0CAE003A2E28 /* RecepyDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecepyDetails.h; sourceTree = "<group>"; };
 		0638A6781A0F0CAE003A2E28 /* RecepyDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecepyDetails.m; sourceTree = "<group>"; };
-		0638A67A1A0F5E5F003A2E28 /* AllRecepiesAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllRecepiesAppDelegate.h; path = ../AllRecepiesAppDelegate.h; sourceTree = "<group>"; };
-		0638A67B1A0F5E5F003A2E28 /* AllRecepiesAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllRecepiesAppDelegate.m; path = ../AllRecepiesAppDelegate.m; sourceTree = "<group>"; };
+		0638A67A1A0F5E5F003A2E28 /* AllRecepiesAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllRecepiesAppDelegate.h; sourceTree = "<group>"; };
+		0638A67B1A0F5E5F003A2E28 /* AllRecepiesAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllRecepiesAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +83,8 @@
 		0638A60B1A0EDBC6003A2E28 = {
 			isa = PBXGroup;
 			children = (
+				0638A67A1A0F5E5F003A2E28 /* AllRecepiesAppDelegate.h */,
+				0638A67B1A0F5E5F003A2E28 /* AllRecepiesAppDelegate.m */,
 				0638A6161A0EDBC6003A2E28 /* RecepyOrWhat */,
 				0638A6301A0EDBC6003A2E28 /* RecepyOrWhatTests */,
 				0638A6151A0EDBC6003A2E28 /* Products */,
@@ -101,12 +103,12 @@
 		0638A6161A0EDBC6003A2E28 /* RecepyOrWhat */ = {
 			isa = PBXGroup;
 			children = (
+				0638A6441A0EF3FE003A2E28 /* AllRecepiesViewController.h */,
+				0638A6451A0EF3FE003A2E28 /* AllRecepiesViewController.m */,
 				0638A6701A0F0BCA003A2E28 /* LaunchScreen.xib */,
 				0638A6711A0F0BCA003A2E28 /* Main.storyboard */,
 				0638A61B1A0EDBC6003A2E28 /* AppDelegate.h */,
 				0638A61C1A0EDBC6003A2E28 /* AppDelegate.m */,
-				0638A67A1A0F5E5F003A2E28 /* AllRecepiesAppDelegate.h */,
-				0638A67B1A0F5E5F003A2E28 /* AllRecepiesAppDelegate.m */,
 				0638A6741A0F0C8D003A2E28 /* RecepyBasicInfo.h */,
 				0638A6751A0F0C8D003A2E28 /* RecepyBasicInfo.m */,
 				0638A6771A0F0CAE003A2E28 /* RecepyDetails.h */,
@@ -115,8 +117,6 @@
 				0638A61F1A0EDBC6003A2E28 /* ViewController.m */,
 				0638A6411A0EE2FF003A2E28 /* NavigationViewController.h */,
 				0638A6421A0EE2FF003A2E28 /* NavigationViewController.m */,
-				0638A6441A0EF3FE003A2E28 /* AllRecepiesViewController.h */,
-				0638A6451A0EF3FE003A2E28 /* AllRecepiesViewController.m */,
 				0638A6471A0EFBAB003A2E28 /* AllRecepies.xcdatamodeld */,
 				0638A6241A0EDBC6003A2E28 /* Images.xcassets */,
 				0638A6171A0EDBC6003A2E28 /* Supporting Files */,

@@ -22,16 +22,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"RecepyBasicInfo" inManagedObjectContext:managedObjectContext];
-    [fetchRequest setEntity:entity];
+    allRecepyInfos = [[NSMutableArray alloc] init];
+    [allRecepyInfos addObject:@"Tutmanik"];
+    [allRecepyInfos addObject:@"Musaka"];
+    [allRecepyInfos addObject:@"Cake"];
+    //NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    
+    
+    //    NSEntityDescription *entity = [NSEntityDescription entityForName:@"RecepyBasicInfo" inManagedObjectContext:managedObjectContext];
+    //    [fetchRequest setEntity:entity];
     NSError *error;
-    self.allRecepyInfos = [managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    //self.allRecepyInfos = [managedObjectContext executeFetchRequest:fetchRequest error:&error];
     self.title = @"All Recepies";
     
     
     //connection to the database to display all recepies
     //allRecepies = @[@"Tutmanik", @"CheeseCake"];
+}
+
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSLog(@"%d - %@", [allRecepyInfos count], [allRecepyInfos objectAtIndex:0]);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -64,9 +75,8 @@
     
     // Configure the cell...
     RecepyBasicInfo *info = [allRecepyInfos objectAtIndex:indexPath.row];
-    cell.textLabel.text = info.title;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",
-                                 info.preparationTime];
+    //cell.textLabel.text = info.title;
+    //cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", info.preparationTime];
     return cell;
 }
 
@@ -85,47 +95,47 @@
 }
 
 /*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+ // Override to support conditional editing of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+ // Return NO if you do not want the specified item to be editable.
+ return YES;
+ }
+ */
 
 /*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
+ // Override to support editing the table view.
+ - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+ if (editingStyle == UITableViewCellEditingStyleDelete) {
+ // Delete the row from the data source
+ [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+ } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+ // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+ }
+ }
+ */
 
 /*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
+ // Override to support rearranging the table view.
+ - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+ }
+ */
 
 /*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
+ // Override to support conditional rearranging of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+ // Return NO if you do not want the item to be re-orderable.
+ return YES;
+ }
+ */
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
