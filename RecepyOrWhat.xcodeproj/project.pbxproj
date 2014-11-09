@@ -58,8 +58,8 @@
 		0638A6751A0F0C8D003A2E28 /* RecepyBasicInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecepyBasicInfo.m; sourceTree = "<group>"; };
 		0638A6771A0F0CAE003A2E28 /* RecepyDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecepyDetails.h; sourceTree = "<group>"; };
 		0638A6781A0F0CAE003A2E28 /* RecepyDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecepyDetails.m; sourceTree = "<group>"; };
-		0638A67A1A0F5E5F003A2E28 /* AllRecepiesAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllRecepiesAppDelegate.h; sourceTree = "<group>"; };
-		0638A67B1A0F5E5F003A2E28 /* AllRecepiesAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllRecepiesAppDelegate.m; sourceTree = "<group>"; };
+		0638A67A1A0F5E5F003A2E28 /* AllRecepiesAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllRecepiesAppDelegate.h; path = ../AllRecepiesAppDelegate.h; sourceTree = "<group>"; };
+		0638A67B1A0F5E5F003A2E28 /* AllRecepiesAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllRecepiesAppDelegate.m; path = ../AllRecepiesAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,6 @@
 		0638A60B1A0EDBC6003A2E28 = {
 			isa = PBXGroup;
 			children = (
-				0638A67A1A0F5E5F003A2E28 /* AllRecepiesAppDelegate.h */,
-				0638A67B1A0F5E5F003A2E28 /* AllRecepiesAppDelegate.m */,
 				0638A6161A0EDBC6003A2E28 /* RecepyOrWhat */,
 				0638A6301A0EDBC6003A2E28 /* RecepyOrWhatTests */,
 				0638A6151A0EDBC6003A2E28 /* Products */,
@@ -107,6 +105,8 @@
 				0638A6711A0F0BCA003A2E28 /* Main.storyboard */,
 				0638A61B1A0EDBC6003A2E28 /* AppDelegate.h */,
 				0638A61C1A0EDBC6003A2E28 /* AppDelegate.m */,
+				0638A67A1A0F5E5F003A2E28 /* AllRecepiesAppDelegate.h */,
+				0638A67B1A0F5E5F003A2E28 /* AllRecepiesAppDelegate.m */,
 				0638A6741A0F0C8D003A2E28 /* RecepyBasicInfo.h */,
 				0638A6751A0F0C8D003A2E28 /* RecepyBasicInfo.m */,
 				0638A6771A0F0CAE003A2E28 /* RecepyDetails.h */,
@@ -444,6 +444,7 @@
 				0638A6391A0EDBC7003A2E28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0638A63A1A0EDBC7003A2E28 /* Build configuration list for PBXNativeTarget "RecepyOrWhatTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +453,7 @@
 				0638A63C1A0EDBC7003A2E28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
